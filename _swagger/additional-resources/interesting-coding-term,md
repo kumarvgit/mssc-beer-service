@@ -1,0 +1,15 @@
+--sphagetti code or big ball of mud
+--microservices should be two pizza team i.e. 12 people i.e. 12 end point
+--netflix -- chaos monkey learn about this
+--single responsiblity principle.
+--https://12factor.net/
+--trace request
+--safe methods --> get, head, trace, options since they do not alter
+	data on server
+--webflux
+--comparing branches in git
+--install tcpmon this is based on request forwarding to 8081 and
+	it actually forwards to 8080 i.e. target port
+-- dev tools is a droovy wrapper and has two class loaders
+	-one for jar dependency
+	-one for the compiled class this makes it a lot fast restart on 

@@ -1,0 +1,17 @@
+Explain why constructor inject is better than other options
+
+https://spring.io/blog/2016/03/04/core-container-refinements-in-spring-framework-4-3
+
+
+
+A class that takes a required dependency as a constructor argument can only be instantiated if that argument is provided (you should have a guard clause to make sure the argument is not null.) A constructor therefore enforces the dependency requirement whether or not you're using Spring, making it container-agnostic.
+
+If you use setter injection, the setter may or may not be called, so the instance may never be provided with its dependency. The only way to force the setter to be called is using @Required or @Autowired , which is specific to Spring and is therefore not container-agnostic.
+
+So to keep your code independent of Spring, use constructor arguments for injection.
+
+Update: Spring 4.3 will perform implicit injection in single-constructor scenarios, making your code more independent of Spring by potentially not requiring an @Autowired annotation at all.
+
+
+-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
