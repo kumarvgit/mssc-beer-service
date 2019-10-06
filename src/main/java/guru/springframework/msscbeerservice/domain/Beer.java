@@ -18,19 +18,23 @@ import java.util.UUID;
 @Entity
 public class Beer {
 
+//    Hibernate managed
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(length = 36, columnDefinition = "varchar", updatable = false, nullable = false) // since PK it cant be null
     private UUID id;
 
+    //    Hibernate managed
     @Version
     private Long version;
 
+    //    Hibernate managed
     @CreationTimestamp
     @Column(updatable = false)
     private Timestamp createdDate;
 
+    //    Hibernate managed
     @UpdateTimestamp
     private Timestamp lastModifiedDate;
 
