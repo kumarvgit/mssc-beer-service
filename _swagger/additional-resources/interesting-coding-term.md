@@ -19,3 +19,7 @@
 ## Excellent Branching stratgy https://github.com/lyndseypadget/semflow
 ## @GetMapping, @PostMapping and others are the extension of @RequestMapping
 ## Http2
+## SpringDataRest
+## Read MapStruct documentation
+## install decompiler in eclipse
+## Mapstruct converts to and from data types and also enums
