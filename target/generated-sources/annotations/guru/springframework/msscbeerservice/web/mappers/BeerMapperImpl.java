@@ -45,7 +45,7 @@ public class BeerMapperImpl implements BeerMapper {
     }
 
     @Override
-    public Beer beerDtoToBeet(BeerDto dto) {
+    public Beer beerDtoToBeer(BeerDto dto) {
         if ( dto == null ) {
             return null;
         }
