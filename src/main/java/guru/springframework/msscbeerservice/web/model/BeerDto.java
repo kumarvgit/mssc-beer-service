@@ -46,8 +46,7 @@ public class BeerDto {
      * Universal product code
      */
     @NotNull
-    @Positive
-    private Long upc;
+    private String upc;
 
     @NotNull
     @Positive
