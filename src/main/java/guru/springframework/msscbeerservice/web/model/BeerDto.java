@@ -14,11 +14,16 @@ import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
+/**
+ * Created by jt on 2019-05-12.
+ */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class BeerDto {
+
     @Null
     private UUID id;
 
@@ -29,11 +34,11 @@ public class BeerDto {
      * This date includes UTC
      */
     @Null
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ssZ", shape=JsonFormat.Shape.STRING)
     private OffsetDateTime createdDate;
 
     @Null
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ssZ", shape=JsonFormat.Shape.STRING)
     private OffsetDateTime lastModifiedDate;
 
     @NotBlank
@@ -48,9 +53,9 @@ public class BeerDto {
     @NotNull
     private String upc;
 
-    @NotNull
-    @Positive
     @JsonFormat(shape = JsonFormat.Shape.STRING)
+    @Positive
+    @NotNull
     private BigDecimal price;
 
     private Integer quantityOnHand;

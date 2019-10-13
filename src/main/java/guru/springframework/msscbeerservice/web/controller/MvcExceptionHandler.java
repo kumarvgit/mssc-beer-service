@@ -9,15 +9,19 @@ import javax.validation.ConstraintViolationException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by jt on 2019-05-25.
+ */
 @ControllerAdvice
 public class MvcExceptionHandler {
 
     @ExceptionHandler(ConstraintViolationException.class)
-    public ResponseEntity<List> validationErrorHandler(ConstraintViolationException e) {
-        List<String> errors;
-        errors = new ArrayList<>(e.getConstraintViolations().size());
+    public ResponseEntity<List> validationErrorHandler(ConstraintViolationException ex){
+        List<String> errorsList = new ArrayList<>(ex.getConstraintViolations().size());
 
-        e.getConstraintViolations().forEach(constraintViolation -> errors.add(constraintViolation.toString()));
-        return  new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
+        ex.getConstraintViolations().forEach(error -> errorsList.add(error.toString()));
+
+        return new ResponseEntity<>(errorsList, HttpStatus.BAD_REQUEST);
     }
+
 }
