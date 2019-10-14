@@ -17,3 +17,5 @@ Update: Spring 4.3 will perform implicit injection in single-constructor scenari
 -------------------------------------------------------------------------------------
 
 WebMvctest doesnot brings the service layer up
+
+shared cache across multiple instance of same services
