@@ -29,3 +29,7 @@
 ## group id and artifact id is called co-ordinates
 ## Find more about maven-enforcer-plugin
 ## how to push artifacts in maven central --> research
+## Java Database Connectivity (JDBC) this is a standard
+## Permanent database -> Data base server is oracle
+## Managed server -> is like AWS data base
+## H2Database https://h2database.com/html/features.html -- it has a compatibliry mode with mysql and other database
