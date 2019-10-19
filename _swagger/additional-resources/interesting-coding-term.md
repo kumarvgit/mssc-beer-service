@@ -27,4 +27,5 @@
 ## Some of Autitors PCI Compliance, SOX, SAS70
 ## show effective pom
 ## group id and artifact id is called co-ordinates
-## FInd more about maven-enforcer-plugin
+## Find more about maven-enforcer-plugin
+## how to push artifacts in maven central --> research
