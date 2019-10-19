@@ -23,3 +23,8 @@
 ## Read MapStruct documentation
 ## install decompiler in eclipse
 ## Mapstruct converts to and from data types and also enums
+## BOM Bill of material
+## Some of Autitors PCI Compliance, SOX, SAS70
+## show effective pom
+## group id and artifact id is called co-ordinates
+## FInd more about maven-enforcer-plugin
