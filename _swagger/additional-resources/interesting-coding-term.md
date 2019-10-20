@@ -33,3 +33,7 @@
 ## Permanent database -> Data base server is oracle
 ## Managed server -> is like AWS data base
 ## H2Database https://h2database.com/html/features.html -- it has a compatibliry mode with mysql and other database
+## Always use validate in schema so that it validates the entity against schema and it will fail to restart.
+## the maximum number of connections allowed by database server shoulb be proponate e.g. mysql defaults to 151 connection so if i am using 2 instance then max allowed connection should be 75, if 3 then 50 per instance
+## HickariCP https://github.com/brettwooldridge/HikariCP
+## HickariCP MySQL connection https://github.com/brettwooldridge/HikariCP/wiki/MySQL-Configuration
