@@ -37,3 +37,9 @@
 ## the maximum number of connections allowed by database server shoulb be proponate e.g. mysql defaults to 151 connection so if i am using 2 instance then max allowed connection should be 75, if 3 then 50 per instance
 ## HickariCP https://github.com/brettwooldridge/HikariCP
 ## HickariCP MySQL connection https://github.com/brettwooldridge/HikariCP/wiki/MySQL-Configuration
+## what is corelation id
+## Artemis docker container https://github.com/vromero/activemq-artemis-docker
+### docker run -it --rm -p 8161:8161 -p 61616:61616 vromero/activemq-artemis
+#### At this point you can open the web server port at 8161 and check the web console using the default username and password of artemis / simetraehcapa.
+## Spring Integration
+## code smell
