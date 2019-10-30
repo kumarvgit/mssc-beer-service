@@ -43,3 +43,4 @@
 #### At this point you can open the web server port at 8161 and check the web console using the default username and password of artemis / simetraehcapa.
 ## Spring Integration
 ## code smell
+## Auto import and organize import
