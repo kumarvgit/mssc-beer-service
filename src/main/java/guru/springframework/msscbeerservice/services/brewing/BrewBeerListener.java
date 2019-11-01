@@ -11,8 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Slf4j
@@ -24,6 +23,7 @@ public class BrewBeerListener {
 
 
     @JmsListener(destination = JmsConfig.BREWING_REQUEST_QUEUE)
+    @Transactional
     public void listen(BrewBeerEvent event) {
         BeerDto beerDto = event.getBeerDto();
 
